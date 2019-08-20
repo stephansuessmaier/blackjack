@@ -16,8 +16,8 @@ const char* helpMessage =
     "  UP:    hit\n"
     "  DOWN:  stand\n"
     "  SPACE: double down\n"
-    "  +:     increase bet\n"
-    "  -:     decrease bet\n"
+    "  RIGHT: increase bet\n"
+    "  LEFT:  decrease bet\n"
     "  h:     show this help page\n"
     "  q:     quit\n"
     "\n"
@@ -84,11 +84,6 @@ int main () {
             }
             // otherwise stand (==next case)
         case KEY_DOWN: // stand
-            //player_stand();
-            //payout();
-            //dealerhand[0] = new_round(bet);
-            //handsize = get_hand(hand, MAX_HANDSIZE);
-            //clear();
             round_finished();
             break;
         case KEY_LEFT: // decrease bet

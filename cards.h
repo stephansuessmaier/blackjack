@@ -5,8 +5,6 @@
 
 /*----types-------------------------------------------------------------------*/
 typedef struct {
-    //all index values 0 <= value <= 127
-    //data types selected like this because sizeof(card) == 4
     char type;
     char suite;
     short value;
